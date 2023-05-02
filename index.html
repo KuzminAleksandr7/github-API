@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Git-user search</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+<header class="header">
+    <div class="header__inner">
+        <a href="index.html" class="header-logo"><img src="assets/img/git-logo.png" alt="logo"></a>
+        <div class="header-search">
+             <input type="search" name="search" id="search" value="" placeholder="Search login" autocomplete="off">
+             <button id="search-btn">
+                 <div class="search">
+                     <img src="assets/img/git-logo.png" alt="logo">
+                 </div>
+                 <span></span>
+             </button>
+        </div>
+    </div>
+</header>
+<section class="main">
+    <div class="container">
+        <div class="main__inner">
+            <div class="main-left">
+                <div id="user-photo"></div>
+                <div id="user-name">
+                    <div class="user-name-label">Name:</div>
+                    <div class="user-name-elem"></div>
+                </div>
+                <div id="user-login">
+                    <div class="user-login-label">Login:</div>
+                    <div class="user-login-elem"></div>
+                </div>
+            </div><!-- ./main-left -->
+            <div class="main-right">
+                <div id="user-url">
+                    <div class="user-url-label">Url to Github:</div>
+                    <div class="user-url-elem"></div>
+                </div>
+                <div id="user-blog">
+                    <div class="user-blog-label">Blog:</div>
+                    <div class="user-blog-elem"></div>
+                </div>
+                <div id="user-city">
+                    <div class="user-city-label">City:</div>
+                    <div class="user-city-elem"></div>
+                </div>
+                <div id="user-email">
+                    <div class="user-email-label">Email:</div>
+                    <div class="user-email-elem"></div>
+                </div>
+                <div class="follow">
+                    <div id="user-followers">
+                        <div class="user-followers-label">Followers:</div>
+                        <div class="user-followers-elem"></div>
+                    </div>
+                    <div id="user-following">
+                        <div class="user-following-label">Following:</div>
+                        <div class="user-following-elem"></div>
+                    </div>
+                </div><!-- ./follow -->
+            </div><!-- ./main-right -->
+            <div class="error-window">
+                <div>404</div>
+                NOT FOUND<br><br>
+                Please enter a different city
+                <div id="error-img">
+                    <img src="assets/img/git-logo.png" alt="error-img">
+                </div>
+            </div>
+        </div><!-- ./main__inner -->
+    </div><!-- ./container -->
+</section><!-- ./main -->
+<section id="load-page">
+    <div id="load-img">
+        <img src="assets/img/git-logo.png" alt="load-img">
+    </div>
+</section>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="assets/scripts/script.js"></script>
+</body>
+</html>
